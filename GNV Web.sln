@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GNV Web", "GNV Web\GNV Web.csproj", "{8F3B7FD1-AC5B-441F-9476-25DE04AA0543}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8F3B7FD1-AC5B-441F-9476-25DE04AA0543}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F3B7FD1-AC5B-441F-9476-25DE04AA0543}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F3B7FD1-AC5B-441F-9476-25DE04AA0543}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F3B7FD1-AC5B-441F-9476-25DE04AA0543}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3EA66726-BC75-41F0-844B-310BFF287B09}
+	EndGlobalSection
+EndGlobal
