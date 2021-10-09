@@ -1,0 +1,39 @@
+﻿@{
+    ViewData["Title"] = "Cadastro de entrada e saída";
+}
+
+<div class="container h-100">
+    <div class="row align-items-center h-100">
+        <div class="col-6 mx-auto">
+            <div class="card">
+                <div class="card-header">
+                    Cadastro de local
+                </div>
+                <div class="card-body">
+                    <form method="post" action="/cadastrar">
+                        <div class="form-group">
+                            <label for="local">Local</label>
+                            <select class="form-control" id="local" placeholder="Selecione um local">
+                                <option>Textil Pavesi</option>
+                                <option>Neide</option>
+                                <option>Zeca</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="tipoRegistro">Tipo de registro</label>
+                            <select class="form-control" id="tipoRegistro" placeholder="Selecione um tipo de registro">
+                                <option>Entrada</option>
+                                <option>Saída</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="quantidade">Quantidade</label>
+                            <input id="quantidade" class="form-control" placeholder="Digite a valor da quantidade" type="text" name="">
+                        </div>
+                        <button class="btn btn-primary float-right" type="submit">Cadastrar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

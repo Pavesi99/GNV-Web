@@ -50,10 +50,10 @@ namespace GNV_Web
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Login}/{action=Index}");
                 endpoints.MapControllerRoute(
-                   name: "Principal",
-                   pattern: "{controller=Principal}/{action=Index}");
+                   name: "Home",
+                   pattern: "{controller=Home}/{action=Index}");
             });
         }
     }
