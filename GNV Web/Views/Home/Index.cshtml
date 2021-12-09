@@ -3,7 +3,11 @@
     ViewData["Title"] = "Home";
 }
 
-<a class="btn btn-outline-primary" href="local">  Local</a>
-<a class="btn btn-outline-primary" href="EntradaSaida">  Entrada/Saída de estoque</a>
+@*<a class="btn btn-outline-primary" href="local">  Local</a>*@
+<button class="btn btn-outline-primary"> @Html.ActionLink("Locais", "Create", "Locals")</button>
+<button class="btn btn-outline-primary">@Html.ActionLink("Cidades", "Create", "Cidades")</button>
+<button class="btn btn-outline-primary">@Html.ActionLink("Bairros", "Create", "Bairros")</button>
+@*<a class="btn btn-outline-primary" asp-controller="LocalsController" asp-action="Index"> Locals</a>
+<a class="btn btn-outline-primary" href="EntradaSaida">  Entrada/Saída de estoque</a>*@
 
 
