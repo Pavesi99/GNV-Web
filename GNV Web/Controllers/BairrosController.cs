@@ -13,29 +13,23 @@ namespace GNV_Web.Controllers
     public class BairrosController : Controller
     {
         private readonly GNV_WebContext _context;
+        List<Cidade> cidades = new List<Cidade>();
+
 
         public BairrosController(GNV_WebContext context)
         {
             _context = context;
-            listar();
         }
 
         //public SelectList CidadeSelecionada { get; set; }
 
         
     
-
-    public ActionResult listar()
-    {
-        var cidades = (from Cidade in _context.Cidade select Cidade);
-        return View(cidades.ToList());
-    }
-
     // GET: Bairros
-    public async Task<IActionResult> Index()
+    public IActionResult Index()
     {
-        return View(await _context.Bairro.ToListAsync());
-    }
+            return View( _context.Bairro.ToList());
+        }
 
     // GET: Bairros/Details/5
     public async Task<IActionResult> Details(int? id)
@@ -58,7 +52,9 @@ namespace GNV_Web.Controllers
     // GET: Bairros/Create
     public IActionResult Create()
     {
-        return View();
+            var cidades = (from Cidade in _context.Cidade select Cidade);
+            ViewBag.Cidades = cidades;
+            return View();
     }
 
     // POST: Bairros/Create
@@ -66,11 +62,11 @@ namespace GNV_Web.Controllers
     // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Create([Bind("Id,Nome")] Bairro bairro)
+    public async Task<IActionResult> Create([Bind("Id_Cidade,Nome")] Bairro bairro)
     {
         if (ModelState.IsValid)
         {
-            _context.Add(bairro);
+            _context.Bairro.Add(bairro);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }

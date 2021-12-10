@@ -10,7 +10,7 @@ namespace GNV_Web.Models
     {
         [Key]
         public int Id { get; set; }
-        public Bairro Id_Bairro { get; set; }
+        public int Id_Bairro { get; set; }
         public string Rua { get; set; }
         public int Numero { get; set; }
         public string Complemento { get; set; }
